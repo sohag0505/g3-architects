@@ -106,3 +106,64 @@ header {
 
 
 /* features section style end */
+
+
+/* love and enojoy section  */
+
+.love-and-enjoy {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    padding-right: 200px;
+    margin-left: 180px;
+    padding-left: 20px;
+}
+
+.love-and-enjoy-description h1 {
+    font-size: 45px;
+    color: #131313;
+    border-left: 4px solid chocolate;
+    padding-left: 20px;
+}
+
+.love-and-enjoy-pic img {
+    width: 600px;
+    height: 859px;
+}
+
+.love-and-enjoy-pic {
+    position: relative;
+}
+
+.btn {
+    width: 170px;
+    height: 110px;
+    padding: 10px;
+    background-color: chocolate;
+    border-radius: 10px;
+    font-size: 22px;
+    position: absolute;
+    bottom: -3%;
+    left: 0;
+}
+
+.love-and-enjoy p {
+    font-size: 16px;
+    color: #727272;
+}
+
+.version,
+.builder,
+.design,
+.edit {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+
+/* love and enojoy section end */
