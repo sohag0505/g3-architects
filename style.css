@@ -3,8 +3,7 @@
 nav {
     background: rgba(255, 144, 14, 0.1);
     padding-right: 200px;
-    margin-left: 180px;
-    padding-left: 20px;
+    padding-left: 200px;
 }
 
 p {
@@ -44,8 +43,7 @@ button {
 header {
     background: rgba(255, 144, 14, 0.1);
     padding-right: 200px;
-    margin-left: 180px;
-    padding-left: 20px;
+    padding-left: 200px;
 }
 
 .head-title {
@@ -344,8 +342,9 @@ footer small {
 
 @media screen and (max-width:576px) {
     nav {
-        margin-left: 20px;
+        margin-left: 0px;
         padding-right: 0;
+        padding-left: 0;
     }
     .nav {
         display: block;
@@ -361,8 +360,9 @@ footer small {
         margin-top: 20px;
     }
     header {
-        margin-left: 20px;
+        margin-left: 0px;
         padding-right: 0px;
+        padding-left: 0;
     }
     .head-title {
         margin-top: -18px;
@@ -372,8 +372,6 @@ footer small {
         font-size: 30px;
     }
     .banner img {
-        height: 150px;
-        width: 220px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -465,3 +463,6 @@ footer small {
         padding: 5px;
     }
 }
+
+
+/* responsive media query for smart phn  end*/
