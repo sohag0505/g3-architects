@@ -167,3 +167,107 @@ header {
 
 
 /* love and enojoy section end */
+
+
+/* some facts section style */
+
+.some-facts {
+    margin-top: 50px;
+    padding-right: 200px;
+    margin-left: 180px;
+    padding-left: 20px;
+}
+
+.some-facts-title h1 {
+    font-size: 45px;
+    color: #131313;
+    margin-top: 50px;
+}
+
+.some-facts-title p {
+    font-size: 16px;
+    color: #727272;
+}
+
+.some-facts-description {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 20px;
+}
+
+.award,
+.project,
+.client,
+.email {
+    text-align: center;
+    border: 2px solid chocolate;
+    width: 241.83px;
+    height: 180px;
+    margin-top: 20px;
+}
+
+.award img,
+.project img,
+.client img,
+.email img {
+    margin-top: 20px;
+}
+
+
+/* some facts section style end*/
+
+
+/* our sponspors section start */
+
+.sponspors {
+    text-align: center;
+    margin-top: 50px;
+    padding-right: 200px;
+    margin-left: 180px;
+    padding-left: 20px;
+}
+
+.sponspors-title {
+    text-align: center;
+}
+
+.sponspors-title h1 {
+    font-size: 45px;
+}
+
+.sponspors-title p {
+    font-size: 16px;
+    color: #727272;
+}
+
+.sponspors-logo {
+    display: flex;
+    gap: 80px;
+    margin-top: 50px;
+    filter: grayscale(100%)
+}
+
+.logo img {
+    width: 150.67px;
+    height: 35px;
+    mix-blend-mode: luminosity;
+}
+
+
+/* our sponspors section end */
+
+footer {
+    text-align: center;
+    background: #FFF4E7;
+    border-radius: 8px;
+    margin: 80px 200px 50px 200px;
+    padding: 30px;
+}
+
+footer small {
+    font-size: 15px;
+    color: #424242;
+}
