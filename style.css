@@ -7,6 +7,17 @@ nav {
     padding-left: 20px;
 }
 
+p {
+    overflow-x: hidden;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    color: #FFF4E7;
+    text-align: center;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -59,6 +70,7 @@ header {
     padding: 2px;
     background-color: chocolate;
     border-radius: 5px;
+    color: white;
 }
 
 .banner img {
@@ -88,7 +100,7 @@ header {
     font-size: 40px;
 }
 
-#pic {
+.pic {
     width: 342px;
     height: 342px;
 }
@@ -106,6 +118,35 @@ header {
 
 
 /* features section style end */
+
+
+/* about g3 style */
+
+.about-g3 {
+    display: flex;
+    gap: 80px;
+    margin-top: 50px;
+    padding-right: 200px;
+    margin-left: 180px;
+    padding-left: 20px;
+}
+
+.about-g3-title h1 {
+    font-size: 45px;
+}
+
+.about-g3-title p {
+    font-size: 16px;
+    color: #727272;
+}
+
+.about-g3-pic img {
+    width: 350px;
+    height: 320px;
+}
+
+
+/* about g3 style end */
 
 
 /* love and enojoy section  */
@@ -198,22 +239,24 @@ header {
     margin-top: 20px;
 }
 
-.award,
-.project,
-.client,
-.email {
+.fact {
     text-align: center;
     border: 2px solid chocolate;
     width: 241.83px;
     height: 180px;
     margin-top: 20px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
 }
 
-.award img,
-.project img,
-.client img,
-.email img {
+.fact img {
     margin-top: 20px;
+}
+
+.fact:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
 }
 
 
@@ -259,6 +302,9 @@ header {
 
 /* our sponspors section end */
 
+
+/* footer section start */
+
 footer {
     text-align: center;
     background: #FFF4E7;
@@ -270,4 +316,152 @@ footer {
 footer small {
     font-size: 15px;
     color: #424242;
+}
+
+
+/* footer section end */
+
+
+/* animation */
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* animation end*/
+
+
+/* responsive media query for smart phn */
+
+@media screen and (max-width:576px) {
+    nav {
+        margin-left: 20px;
+        padding-right: 0;
+    }
+    .nav {
+        display: block;
+        padding-right: 0;
+    }
+    .nav-list ul {
+        display: block;
+    }
+    .nav-title h2 {
+        font-size: 30px;
+    }
+    .nav-list ul li {
+        margin-top: 20px;
+    }
+    header {
+        margin-left: 20px;
+        padding-right: 0px;
+    }
+    .head-title {
+        margin-top: -18px;
+    }
+    .head-title h1 {
+        padding-top: 18px;
+        font-size: 30px;
+    }
+    .banner img {
+        height: 150px;
+        width: 220px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .features-section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .features-img {
+        display: flex;
+        flex-direction: column;
+    }
+    .features-description h2 {
+        font-size: 26px;
+    }
+    .pic {
+        height: 200px;
+        width: 250px;
+        margin-top: 5px;
+    }
+    .about-g3,
+    .love-and-enjoy {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 30px;
+    }
+    .about-g3-pic img,
+    .love-and-enjoy-pic img {
+        height: 200px;
+        width: 280px;
+    }
+    .about-g3-title .about-g3-title h1 {
+        font-size: 30px;
+    }
+    .btn {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        font-size: 16px;
+    }
+    .some-facts-title {
+        padding: 0 5px 0 5px;
+    }
+    .some-facts-title h1 {
+        font-size: 30px;
+    }
+    .some-facts,
+    .sponspors {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 30px;
+    }
+    .some-facts-description {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .sponspors-title h1 {
+        font-size: 30px;
+    }
+    .sponspors-title p {
+        font-size: 15px;
+    }
+    .sponspors-logo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+    .logo img {
+        width: 100px;
+        height: 25px;
+    }
+    footer {
+        padding: 30px;
+        margin: 0px;
+    }
+    footer small {
+        font-size: 15px;
+        color: #424242;
+    }
+    .btn-primary {
+        height: 40px;
+        width: 80px;
+        padding: 5px;
+    }
 }
